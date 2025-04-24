@@ -1,46 +1,23 @@
 import { getFrameMetadata } from '@coinbase/onchainkit/frame';
-import type { Metadata } from 'next';
-import { NEXT_PUBLIC_URL } from './config';
 
-const frameMetadata = getFrameMetadata({
-  buttons: [
-    {
-      label: 'Story time',
-    },
-    {
-      action: 'tx',
-      label: 'Send Base Sepolia',
-      target: `${NEXT_PUBLIC_URL}/api/tx`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
-    },
-  ],
-  image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
-    aspectRatio: '1:1',
-  },
-  input: {
-    text: 'Tell me a story',
-  },
-  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
-});
+export default function Home() {
+  const frameMetadata = getFrameMetadata({
+    buttons: [
+      { label: 'Show TL;DRs' },
+      { label: 'Top 5 Trending' },
+      { label: 'Base TL;DR' },
+    ],
+    image: 'https://i.imgur.com/0jD5WVs.png', // Placeholder unicorn image
+    post_url: 'https://tldr-drop.vercel.app/api/frame', // Your Vercel URL + /api/frame
+  });
 
-export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
-  openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
-  },
-  other: {
-    ...frameMetadata,
-  },
-};
-
-export default function Page() {
   return (
-    <>
+    <main>
       <h1>@captainsnowboy’s Weekly TL;DR Drop 🦄</h1>
-    </>
+      <meta name="fc:frame" content="vNext" />
+      {Object.entries(frameMetadata).map(([key, value]) => (
+        <meta key={key} name={key} content={value} />
+      ))}
+    </main>
   );
 }
