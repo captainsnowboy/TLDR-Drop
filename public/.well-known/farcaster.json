@@ -1,0 +1,12 @@
+{
+    "frame": {
+      "version": "1",
+      "name": "Weekly TL;DR Drop",
+      "iconUrl": "https://i.imgur.com/0jD5WVs.png",
+      "homeUrl": "https://tldr-drop.vercel.app",
+      "imageUrl": "https://i.imgur.com/0jD5WVs.png",
+      "buttonTitle": "Start TL;DR",
+      "splashImageUrl": "https://i.imgur.com/0jD5WVs.png",
+      "splashBackgroundColor": "#ffffff"
+    }
+  }
