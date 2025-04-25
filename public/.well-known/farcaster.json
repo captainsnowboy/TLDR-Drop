@@ -1,4 +1,9 @@
 {
+    "accountAssociation": {
+      "header": "<eyJmaWQiOjI2NjA4NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDc2MWQ4YzcxMTJEMmM1NDU2MzMxYUE2MGY1OUYyRmJEYkU1YzMwODQifQ>",
+      "payload": "<eyJkb21haW4iOiJ0bGRyLWRyb3AudmVyY2VsLmFwcCJ9>",
+      "signature": "<MHg0MTBlYjIyZjcyZjJhNDJjMTFjZWMzMjc0MTUyZTVjMzBlMTY0ZDBlNzUzM2E3MmY2YjIxNzgwMTA3NzkyMTE2MjU5YzQ0NTFiYjMyOTNjYzcxZmIxNmY0YzA3NzM5MWM5ZGZlOTVjMTQxNDYxNDIzMDNiYThiYzgzZTQ0OTE4MzFi>"
+    },
     "frame": {
       "version": "1",
       "name": "Weekly TL;DR Drop",
