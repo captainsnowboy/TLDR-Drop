@@ -1,0 +1,1 @@
+export const NEXT_PUBLIC_URL = 'https://tldr-drop.vercel.app';
